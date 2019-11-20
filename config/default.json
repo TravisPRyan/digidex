@@ -1,0 +1,3 @@
+{
+  "mongoURI": "mongodb+srv://GT79:greycloak@digidex-gzjs2.mongodb.net/test?retryWrites=true&w=majority"
+}
