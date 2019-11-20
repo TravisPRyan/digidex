@@ -1,1 +1,1 @@
-Push 1: Initital server setup.
+Push 2: Add auth/contacts/users routes.
