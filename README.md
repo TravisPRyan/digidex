@@ -1,1 +1,1 @@
-Push 2: Add auth/contacts/users routes.
+Push 3: Implement global variables via config. Connect to DB.
