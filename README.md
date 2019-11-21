@@ -1,1 +1,1 @@
-Push 4: Create User model. Implement validation (express-validator).
+Push 5: Implement hash Passwords. Create user registration route.
