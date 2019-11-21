@@ -5,6 +5,8 @@ const PORT = process.env.PORT || 5000;
 
 // Connect DB
 connectDB();
+// bodyparser middleware
+app.use(express.json({ extended: false }));
 
 app.get("/", (req, res) =>
   res.json({ msg: "You have reached the digiDex API" })
