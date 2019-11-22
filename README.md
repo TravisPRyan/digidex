@@ -1,1 +1,1 @@
-Push 6: Implement jwt for user registration.
+Push 7: Add authentication to auth route (user login).
