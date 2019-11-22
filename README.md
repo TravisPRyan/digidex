@@ -1,1 +1,1 @@
-Push 5: Implement hash Passwords. Create user registration route.
+Push 6: Implement jwt for user registration.
