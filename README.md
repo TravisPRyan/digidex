@@ -1,1 +1,1 @@
-Push 8: Create authorization middleware. Complete login/register authorization.
+Push 9: Create Contact model. Create Contacts route.
