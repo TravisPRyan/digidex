@@ -13,11 +13,11 @@ const { check, validationResult } = require("express-validator");
 router.post(
   "/",
   [
-    check("name", "Name is required")
+    check("name", "Name is required.")
       .not()
       .isEmpty(),
     check("email", "Only valid email can be used.").isEmail(),
-    check("password", "Enter a password of 8 or more characters").isLength({
+    check("password", "Enter a password of 8 or more characters.").isLength({
       min: 8
     })
   ],
@@ -33,7 +33,7 @@ router.post(
       let user = await User.findOne({ email });
 
       if (user) {
-        return res.status(400).json({ msg: "User exists" });
+        return res.status(400).json({ msg: "User exists." });
       }
 
       user = new User({
@@ -65,7 +65,7 @@ router.post(
       );
     } catch (error) {
       console.error(error.message);
-      res.status(500).send("Server Error");
+      res.status(500).send("Server Error.");
     }
   }
 );
