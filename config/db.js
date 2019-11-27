@@ -10,7 +10,7 @@ const connectDB = async () => {
       useFindAndModify: false,
       useUnifiedTopology: true
     });
-    console.log("Connected to MongoDB digiDex");
+    console.log("Connected to MongoDB digiDex.");
   } catch (error) {
     console.error(error.message);
     process.exit(1);
