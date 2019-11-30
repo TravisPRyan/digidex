@@ -1,1 +1,1 @@
-Push 12: Initialize React.
+Push 13: Create Navbar. Setup Router. Create home and about components.
