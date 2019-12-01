@@ -1,1 +1,1 @@
-Push 13: Create Navbar. Setup Router. Create home and about components.
+Push 14: Initialize global state.
