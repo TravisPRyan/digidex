@@ -1,1 +1,1 @@
-Push 14: Initialize global state.
+Push 15: Create Contacts and ContactItem components.
