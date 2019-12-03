@@ -1,1 +1,1 @@
-Push 17: Implement delete contact (currently removes from ui, not db).
+Push 18: Implement set and clear current contact. Add current to contact state.
