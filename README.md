@@ -1,1 +1,1 @@
-Push 18: Implement set and clear current contact. Add current to contact state.
+Push 19: Implement edit and update contact.
