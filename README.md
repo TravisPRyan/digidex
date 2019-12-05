@@ -1,1 +1,1 @@
-Push 19: Implement edit and update contact.
+Push 20: Create contact filter form. Implement contact filtering.
