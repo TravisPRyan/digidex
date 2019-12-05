@@ -1,1 +1,1 @@
-Push 20: Create contact filter form. Implement contact filtering.
+Push 21: Add animated effects. Implement various styling improvements.
