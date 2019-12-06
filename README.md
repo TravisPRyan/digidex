@@ -1,1 +1,1 @@
-Push 21: Add animated effects. Implement various styling improvements.
+Push 22: Implement authentication context and initial state.
