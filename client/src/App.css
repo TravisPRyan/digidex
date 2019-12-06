@@ -368,6 +368,19 @@ table th {
   background: var(--light-color);
 }
 
+.form-container {
+  max-width: 50%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
