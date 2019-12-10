@@ -17,8 +17,8 @@ router.post(
       .not()
       .isEmpty(),
     check("email", "Only valid email can be used.").isEmail(),
-    check("password", "Enter a password of 8 or more characters.").isLength({
-      min: 8
+    check("password", "Enter a password of 6 or more characters.").isLength({
+      min: 6
     })
   ],
   async (req, res) => {
