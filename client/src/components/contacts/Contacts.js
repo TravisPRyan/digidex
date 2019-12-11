@@ -7,7 +7,7 @@ const Contacts = () => {
   const contactContext = useContext(ContactContext);
   const { contacts, filtered } = contactContext;
 
-  if (contacts.length === 0) {
+  if (contacts === null) {
     return <h4>Please input a contact.</h4>;
   }
   return (
