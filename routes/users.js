@@ -33,7 +33,7 @@ router.post(
       let user = await User.findOne({ email });
 
       if (user) {
-        return res.status(400).json({ msg: "User exists." });
+        return res.status(400).json({ message: "User exists." });
       }
 
       user = new User({
@@ -56,7 +56,7 @@ router.post(
         payload,
         config.get("jwtSecret"),
         {
-          expiresIn: 3600
+          expiresIn: 36000
         },
         (error, token) => {
           if (error) throw error;
