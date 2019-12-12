@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Contact = require("../models/Contact");
-const User = require("../models/User");
+const user = require("../models/User");
 const auth = require("../middleware/auth");
 const { check, validationResult } = require("express-validator");
 
@@ -73,11 +73,12 @@ router.put("/:id", auth, async (req, res) => {
 
   try {
     let contact = await Contact.findById(req.params.id);
-    if (!contact) return res.status(404).json({ msg: "Contact not found." });
+    if (!contact)
+      return res.status(404).json({ message: "Contact not found." });
 
     //Authorized uSer?
     if (contact.user.toString() !== req.user.id) {
-      return res.status(401).json({ msg: "Not Authorized." });
+      return res.status(401).json({ message: "Not Authorized." });
     }
 
     //Update
@@ -100,16 +101,17 @@ router.put("/:id", auth, async (req, res) => {
 router.delete("/:id", auth, async (req, res) => {
   try {
     let contact = await Contact.findById(req.params.id);
-    if (!contact) return res.status(404).json({ msg: "Contact not found." });
+    if (!contact)
+      return res.status(404).json({ message: "Contact not found." });
 
     //Authorized uSer?
     if (contact.user.toString() !== req.user.id) {
-      return res.status(401).json({ msg: "Not Authorized." });
+      return res.status(401).json({ message: "Not Authorized." });
     }
 
     await Contact.findByIdAndRemove(req.params.id);
 
-    res.json({ msg: "Contact Deleted." });
+    res.json({ message: "Contact Deleted." });
   } catch (error) {
     console.error(error.message);
     res.status(500).send("Sever Error.");
