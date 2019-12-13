@@ -1,1 +1,1 @@
-Push 27: Implement user login. Fixed error alert not firing during duplicate registration.
+Push 28: Implement user logout. Drop register/login links from view when authenticated. Create private route component.
