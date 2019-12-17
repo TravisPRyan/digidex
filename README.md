@@ -1,1 +1,1 @@
-Push 30: Implement delete contact (server).
+Push 31: Implement update contact.
